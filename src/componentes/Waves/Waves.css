@@ -1,0 +1,68 @@
+.waves{
+    position:absolute;
+    background-color: var(--colorFondoArticulos);
+    height: 150px;
+    overflow: hidden;
+    z-index: 1000;
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100% !important;
+    left: 0;
+}
+
+.waves .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px !important;
+    background: url(/sprites/wave.png);
+    background-size: 1000px 100px;
+}
+
+.waves .wave1{
+    animation: animatewave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+}
+.waves .wave2{
+    animation: animatewave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.waves .wave3{
+    animation: animatewave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+.waves .wave4{
+    animation: animatewave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animatewave{
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animatewave2{
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: -1000px;
+    }
+}

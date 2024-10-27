@@ -1,0 +1,76 @@
+.htmlopen{
+    width: 100px;
+    opacity: 0;
+}
+
+.htmlopen:nth-of-type(1){
+    left: -10%;
+    animation: EntradaIzq 1s linear forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+.htmlopen:nth-of-type(2){
+right: -10%;
+animation: EntradaDer 1s linear forwards;
+opacity: 0;
+animation-delay: 0.2s;
+}
+
+@keyframes EntradaIzq{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes EntradaDer{
+    0%{
+        right:-10%;
+        opacity: 0;
+    }
+    100%{
+        right: 30%;
+        opacity: 1;
+    }
+}
+
+.robot {
+    padding: 0;
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+
+}
+
+
+.robot.show{
+    opacity: 1;
+}
+
+.robot figure{
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    width: 200px;
+}
+.robot figure img:nth-of-type(2), div:nth-of-type(1) figure img:nth-of-type(3){
+width: 30px;
+top: 15px;
+position: absolute;
+}
+.robot figure img:nth-of-type(1){
+    width: 200px;
+    position: absolute;
+}
+
+.robotdiv {
+    height: fit-content;
+    margin: 0;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 35px;
+}
+
+

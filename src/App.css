@@ -1,0 +1,10 @@
+:root{
+    --colorSecundario: #20e3b2;
+    --colorPrincipal:rgb(10,25,47);
+    --colorRojo:rgb(255, 40, 80);
+    --colorFondoArticulos:#081426;
+}
+
+body{
+    background-color: var(--colorPrincipal);
+}

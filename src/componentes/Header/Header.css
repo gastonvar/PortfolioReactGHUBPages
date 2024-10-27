@@ -1,0 +1,153 @@
+header {
+    background-color: var(--colorFondoArticulos);
+    text-align: start;
+    width: 101% !important;
+    max-width: none !important;
+    height: 100px;
+    top: 0;
+    z-index: 1000;
+    margin: 0 !important;
+  }
+  
+  header nav {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+  }
+  nav ul{
+    width:fit-content;
+    margin: 0 auto !important;
+  }
+  
+  header nav ul li a {
+    color: var(--colorSecundario);
+    padding: 15px;
+    background-color: var(--colorPrincipal);
+    border-radius: 15px;
+    transition: all .3s;
+    box-shadow: -3px 3px var(--colorSecundario);
+  }
+  
+  header nav ul li a:not(.githublogo):not(.linkedinlogo):not(.curriculumButton) {
+    box-shadow: -3px 3px var(--colorSecundario);
+  }
+  
+  header nav ul li a{
+    box-shadow: 0 0;
+  }
+  
+  header nav ul li a:hover {
+    color: black;
+    background-color: var(--colorSecundario);
+  }
+  
+  
+  .githublogo {
+    background-image: url('/sprites/githublogo.png');
+    background-size: 50px 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .githublogo:hover {
+    background-image: url('/sprites/githublogo_alt.png');
+    background-color: var(--colorPrincipal);
+  }
+  
+  .linkedinlogo {
+    background-image: url('/sprites/linkedinlogo.png');
+    background-size: 50px 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+  
+
+  .linkedinlogo:hover {
+    background-image: url('/sprites/linkedinlogo_alt.png');
+    background-color: var(--colorPrincipal);
+  }
+  
+.hamburger {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: auto;
+}
+
+.menu {
+    transition: all 0.3s ease;
+    display: none;
+    background-color: var(--colorFondoArticulos);
+    margin: 0 auto !important; 
+    width: 100vw;   
+    z-index: 1000;
+  }
+  .menu a {
+    text-decoration: none;
+  }
+  .menu.open {
+    display: block;
+  }
+  
+  .menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  @media (max-width: 576px) {
+    .menu ul {
+      display: block;
+    }
+  
+    .menu li {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu li a {
+      display: block;
+      padding: 10px;
+      margin: 0 auto;
+      width: 50vw; 
+    }
+  
+    .linkedinlogo, .githublogo {
+      background-size: 50px 50px;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto; 
+    }
+  
+    .menu.open .linkedinlogo, .menu.open .githublogo {
+      background-image: none;
+      background-position: center;
+      margin: 0 auto;
+      box-shadow: -3px 3px var(--colorSecundario);
+    }
+    .menu.open .linkedinlogo::before {
+        content: "LinkedIn";
+        display: block;
+        color: var(--colorPrimario); 
+        font-size: 16px; 
+        text-align: center;
+      }
+      
+      .menu.open .githublogo::before {
+        content: "GitHub";
+        display: block;
+        color: var(--colorPrimario);
+        font-size: 16px; 
+        text-align: center;
+      }
+      
+  }

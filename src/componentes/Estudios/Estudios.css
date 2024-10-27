@@ -1,0 +1,50 @@
+.estudios{
+    text-align: start;
+    height: 50vh;
+    margin-bottom: 50px;
+}
+
+.estudios h4{
+    color: white;
+}
+.estudios p{
+    text-align: center;
+    font-weight: bold;
+}
+.estudios .FING{
+    color: rgb(67, 146, 199);
+}
+
+.estudios .LICEO{
+    color: rgb(145, 94, 0);
+}
+
+.estudios .RETOMAR{
+    color: gray;
+}
+.estudios article{
+    border-radius: 18px;
+    background-color: var(--colorFondoArticulos);
+    margin-bottom: 10px;
+}
+
+.estudios figure{
+    padding: 0;
+    margin: 0;
+}
+.estudios figure img{
+    width: 25px;
+}
+
+.reveal{
+    position:relative;
+    transform: translateY(400px);
+
+    opacity: 0;
+    transition: .5s all ease-in;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

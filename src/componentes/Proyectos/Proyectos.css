@@ -1,0 +1,123 @@
+.githubButton {
+    background-color: #24292e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    display: block;
+}
+
+.githubButton:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.githubButton:active {
+    transform: translateY(0);
+}
+
+.accordion-button, .accordion-item{
+    background-color: var(--colorPrincipal);
+    color: white;
+}
+.accordion-button{
+    position: relative;
+    transition: all .3s;
+}
+.proyectos_div .accordion-item button figure{
+    position: absolute;
+    right: 7%;
+    top: 20%;
+    height: 30px;
+    width: 30px;
+    background-image: url("/sprites/spritesProyectos.png");
+    background-repeat: no-repeat;
+}
+.proyectos_div figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.proyectos_div figure img {
+    width: 100%;
+    min-height: 200px !important; 
+  }
+  
+.proyectos_div figcaption {
+    text-align: center; 
+    margin-top: 8px; 
+    width: 100%; 
+  }
+  
+.proyectos_div .accordion-item article p a{
+margin: 50%;
+}
+.proyectos_div p{
+    color: white !important;
+}
+.proyectos_div .accordion-item:nth-of-type(1) button figure{
+background-position: 0 0;
+}
+
+.proyectos_div .accordion-item:nth-of-type(2) button figure{
+    background-position: -40px -1px;
+}
+
+.proyectos_div .accordion-item:nth-of-type(3) button figure{
+    background-position: -80px 0;
+}
+
+.proyectos_div .accordion-body figure{
+    position: relative;
+}
+
+.proyectos_div .accordion-body figcaption{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-weight: 900;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.6);
+    display: block;
+    color: white;
+}
+
+.proyectos_div #accordion-caption{
+    color: var(--colorSecundario);
+}
+
+.proyectos_div .accordion-body p{
+    color: white;
+    font-size: 14px;
+}
+
+.accordion{
+    --bs-accordion-active-bg:rgb(73, 158, 158);
+}
+
+.accordion-item{
+    border: 2px solid var(--colorSecundario);
+    margin: 0;
+    padding: 0 !important;
+}
+
+.accordion-item article{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+.accordion-item article .curriculumButton{
+    margin: 41%;
+    padding: 2px;
+}
+

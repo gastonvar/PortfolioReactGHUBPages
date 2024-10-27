@@ -1,0 +1,43 @@
+.typewriter-container {
+  width: 100%; 
+  color: white;
+  opacity: 0;
+  animation: fadein 2s forwards;
+  display: flex;
+  justify-content: center; 
+  margin-top: -50px;
+}
+
+.typewriter-text {
+  font-size: 5vw; 
+  letter-spacing: 0.2em; 
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter-span{
+  color: var(--colorSecundario);
+}
+
+.cursor {
+  border-right: 0.1em solid white; 
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+@media (max-width: 767px) {
+  .typewriter-text {
+    font-size: 7vw; 
+    letter-spacing: 0.1em; 
+  }
+}

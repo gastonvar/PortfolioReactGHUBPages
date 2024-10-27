@@ -1,0 +1,16 @@
+footer{
+    color: white;
+    margin: 0 !important;  
+    background-color: var(--colorFondoArticulos);
+    text-align: center !important;
+}
+
+footer .curriculumButton{
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+footer .curriculumButton:hover{
+    border:2px solid var(--colorSecundario);
+}

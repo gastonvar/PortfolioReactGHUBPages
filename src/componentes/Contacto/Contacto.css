@@ -1,0 +1,28 @@
+form{
+    background-color: var(--colorFondoArticulos);
+    border-radius: 18px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+form button[type="submit"] {
+    margin: 0 auto;
+}
+.contacto h2,.contacto p {
+    color: white;
+}
+.contacto input[type="text"], textarea{
+ background-color: white;
+ color: black;
+}
+
+.contacto label{
+    color: white;
+}
+
+.contacto form{
+    text-align: start;
+}
